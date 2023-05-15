@@ -10,7 +10,7 @@ public class ParSauImpar {
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Please enter a number: ");
-		int number = scan.nextInt();
+		number = scan.nextInt();
 		scan.close();
 	}
 // = operator de atriburie x=8
@@ -19,12 +19,12 @@ public class ParSauImpar {
 		
 		if ( number % 2 == 0) {
 		
-			System.out.println(number + "este par!");
+			System.out.println(number + " este par!");
 			
 		}
 		else {
 			
-			System.out.println(number + "este impar!");
+			System.out.println(number + " este impar!");
 		}
 	}
 }
