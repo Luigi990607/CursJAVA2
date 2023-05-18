@@ -2,9 +2,9 @@ package curs4;
 
 public class TernaryOperator {
 	
-	int a
-	int b
-	int x
+	int a;
+	int b;
+	int x;
 	
 	System.out.println(x);
 	
