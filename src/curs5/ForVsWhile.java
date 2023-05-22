@@ -16,7 +16,10 @@ public class ForVsWhile {
 		// TODO Auto-generated method stub
 		System.out.println("Please enter a number: ");
         Scanner scan=new Scanner(System.in);
-        scan.close();5
+        scan.close();
+        //rezolvareCuFor();
+        //rezolvareCuWhile();
+        rezolvareCuDoWhile();
 	}
 	
 	public static void rezolvareCuFor() {
@@ -45,6 +48,21 @@ public class ForVsWhile {
 			nr = scan.nextInt();
 		}
 		scan.close();
+	}
+	
+	public static void rezolvareCuDoWhile(){
+		System.out.println("Te rog introdu nr de ore lucrate: ");
+		Scanner scan=new Scanner(System.in);
+		int nr=scan.nextInt();
+		
+		do {
+
+			System.out.println("Please enter a number: ");
+			nr = scan.nextInt();
+			System.out.println(nr * 10);
+		} while (nr !=0);
+		scan.close();
+		
 	}
 	
 }
