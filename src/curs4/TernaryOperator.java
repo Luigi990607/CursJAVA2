@@ -2,16 +2,26 @@ package curs4;
 
 public class TernaryOperator {
 	
-	int a;
-	int b;
+	public static void main(String[] args){
+		
+		// x = conditie?expersie1 (va fi atribuit in x daca conditie == true): expresie2
+		
+	int a= 130;
+	int b= 60; 
 	int x;
 	
+	x=a>b?a:b;
+	if(a > b) {
+		x = a;
+	}else {
+		x = b;
+	}
 	System.out.println(x);
 	
 	int num1=5;
 	int num2=10;
 	int num3=8;
-	int y=(num1?num2)? num1 : num2 ;
+	int y=(num1>num2)? num1 : num2 ;
 	y= (num1>num2)?num1:(num2<num3?num2 :num3);
 			if (num1>num2) {
 				y=num1;
@@ -22,5 +32,6 @@ public class TernaryOperator {
 			else {
 				y=num3;
 			}
-
-}
+			System.out.println(y);
+	}
+	}
