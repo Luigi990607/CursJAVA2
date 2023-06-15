@@ -39,7 +39,7 @@ public class Atm {
 			//Scanner scan= new Scanner(System.in);
 		
 			try {
-			atm.atmOperations(acc);
+			     atm.atmOperations(acc);
 			System.out.println("Do you want to continue?");
 			flag=scan.nextBoolean();
 			
@@ -50,8 +50,9 @@ public class Atm {
 		scan.close();
 	}
 
+
 	
-	public void atmOperations(CurrentAcount.obj) throws InvalidAmountException, InsuficientFundsException {
+	public void atmOperations(CurrentAcount obj) throws InvalidAmountException, InsuficientFundsException {
 		//Scanner scan=new Scanner(System.in);
 		System.out.println("Hi, Available operations are:");
 		System.out.println("1: Deposit");
