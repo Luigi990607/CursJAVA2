@@ -1,6 +1,9 @@
 package curs11;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Properties;
 public class PropertiesFileProcessor {
 
@@ -18,18 +21,18 @@ public class PropertiesFileProcessor {
 		    } catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			} }
 		    
 		    public void readPropertiesFile(String key) {
-		    try (FileIntupStream inputStream= new FileInputStream("test.properties")){
+		    try (FileInputStream inputStream= new FileInputStream("test.properties")){
 		    	Properties propFile = new Properties();
 		    	propFile.load(inputStream);
 		    	System.out.println(propFile.getProperty(key));
 		    }catch(IOException e) {
 		    	e.printStackTrace();
 		    }
+		    
 		    }
 	
-    
 	}
-}
+
