@@ -33,6 +33,19 @@ public class PropertiesFileProcessor {
 		    }
 		    
 		    }
+		    public void deleteFromPropertiesFiles(String key) {
+		    	Properties prop = new Properties();
+		    	try (FileInputStream inputStream= new FileInputStream("test.properties")){
+			    	//prop.setProperty(output,null);
+			    	//prop.store(output, null);
+			    	System.out.println(prop.getProperty(key));
+			    }catch(IOException e) {
+			    	e.printStackTrace();
+		    } try (FileOutputStream outPutStream= new FileOutputStream("test.properties")){
+		    } catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} }
 	
 	}
 
