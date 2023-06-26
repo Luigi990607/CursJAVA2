@@ -1,1 +1,3 @@
-{"name":"TestUser","email":"email@testuser.com"}
+{ "name":"TestUser",
+  "listaObiecte":["Obiect1","Obiect2","Obiect3","Obiect4","Obiect5"]
+}
