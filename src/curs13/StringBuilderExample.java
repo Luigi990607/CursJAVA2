@@ -23,7 +23,10 @@ public class StringBuilderExample {
 		sb.reverse();
 		System.out.println(sb);
 	}
-	
+	public static void findInString(String text, int startIndex, int endIndex) {
+		StringBuilder sb = new StringBuilder(text);
+		
+	}
 	public static void replaceFromString(String text,int startIndex, int endIndex, String textToReplace) {
 		StringBuilder sb = new StringBuilder(text);
 		System.out.println(sb);

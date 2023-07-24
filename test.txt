@@ -1,1 +1,2 @@
-Textul scris in fisierAlt text in fisier
+Textul scris in fisier!
+Alt text in fisier
